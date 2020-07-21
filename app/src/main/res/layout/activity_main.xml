@@ -8,17 +8,16 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
-
         android:id="@+id/coordinatorLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
-
+            app:statusBarForeground="#00FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="192dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +34,8 @@
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"></androidx.appcompat.widget.Toolbar>
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -45,6 +45,7 @@
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="#FFFFFF"
             android:visibility="visible"
             app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"

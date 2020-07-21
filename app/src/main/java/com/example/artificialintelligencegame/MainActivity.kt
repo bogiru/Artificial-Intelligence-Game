@@ -27,6 +27,7 @@ class FullscreenActivity : AppCompatActivity() {
     private lateinit var navController: NavController
 
 
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         configureBinding()
@@ -42,12 +43,14 @@ class FullscreenActivity : AppCompatActivity() {
     private fun configureNavigationView() {
         navController = findNavController(R.id.content_fragment)
         appBarConfiguration = AppBarConfiguration(navController.graph)
-
+        navController.navigate(R.id.mapFragment2)
     }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.content_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
 
 }
