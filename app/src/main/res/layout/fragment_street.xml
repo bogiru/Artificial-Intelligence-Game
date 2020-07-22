@@ -17,15 +17,16 @@
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/traffic_lights"
-            android:layout_width="167dp"
-            android:layout_height="157dp"
+            android:layout_width="65dp"
+            android:layout_height="118dp"
             android:onClick="@{(view) -> viewModel.showRobot(view)}"
             android:src="@drawable/traffic_lights"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.008"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.518" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/car"

@@ -19,33 +19,33 @@
             android:id="@+id/computer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="152dp"
             android:onClick="@{(view) -> viewModel.showRobot(view)}"
-            android:layout_marginStart="136dp"
             android:src="@drawable/computer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.615" />
+            app:layout_constraintVertical_bias="0.608" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/column"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="52dp"
-            android:src="@drawable/column"
+            android:layout_marginEnd="16dp"
             android:onClick="@{(view) -> viewModel.showRobot(view)}"
+            android:src="@drawable/column"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.674" />
+            app:layout_constraintVertical_bias="0.664" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/vacuum_cleaner"
-            android:layout_width="100dp"
-            android:layout_height="66dp"
-            android:layout_marginEnd="128dp"
+            android:layout_width="67dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="44dp"
             android:onClick="@{(view) -> viewModel.showRobot(view)}"
-            android:layout_marginBottom="40dp"
             android:src="@drawable/vacuum_cleaner"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

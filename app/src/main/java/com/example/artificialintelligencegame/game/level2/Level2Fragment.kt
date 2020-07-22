@@ -27,6 +27,7 @@ class Level2Fragment : Fragment() {
     ): View? {
         configureAnimation()
         configureBinding(inflater, container)
+        configureDotsIndicator()
         setupObserverViewModel()
         return binding.root
     }
@@ -34,7 +35,7 @@ class Level2Fragment : Fragment() {
     private fun configureBinding(inflater: LayoutInflater, container: ViewGroup?) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_level2, container, false)
         binding.viewModel = viewModel
-        binding.pager.adapter = Level2Adapter(activity!!.application, viewModel)
+
 
         binding.executePendingBindings()
     }
@@ -54,6 +55,14 @@ class Level2Fragment : Fragment() {
              hideText()
          })
 
+    }
+
+    private fun configureDotsIndicator() {
+        val wormDotsIndicator = binding.level2DotsIndicator
+        val viewPager = binding.pager
+        val adapter = Level2Adapter(activity!!.application, viewModel)
+        binding.pager.adapter = adapter
+        wormDotsIndicator.setViewPager(viewPager)
     }
 
     private fun enLargeView(view: View) {
