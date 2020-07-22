@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.artificialintelligencegame.R
 import com.example.artificialintelligencegame.databinding.Level1FragmentBinding
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -47,12 +48,22 @@ class Level1 : Fragment() {
         binding.robotText.startAnimation(animDisappearance)
 
         when (index) {
-            2 -> binding.robotText.text = activity!!.application.getString(R.string.robot_text_2)
-            3 -> binding.robotText.text = activity!!.application.getString(R.string.robot_text_3)
+            2 -> {
+                binding.robotText.text = activity!!.application.getString(R.string.robot_text_2)
+                binding.actionTextView.text = "Эээ, я вообщем-то, спал несколько лет... Эксперимент ученых... Так что же произошло??"
+            }
+            3 -> {
+                binding.robotText.text = activity!!.application.getString(R.string.robot_text_3)
+
+                binding.actionTextView.text =  "Я последня надежда? О чем ты?"
+
+            }
             4 -> {
                 binding.robotText.text = activity!!.application.getString(R.string.robot_text_4)
-                binding.actionTextView.text = "Конечно!"
+                binding.actionTextView.text = "Я готов!"
             }
+
+            5 -> findNavController().navigate(R.id.action_level1_to_level2Fragment)
         }
 
         binding.robotText.startAnimation(animAppearance)

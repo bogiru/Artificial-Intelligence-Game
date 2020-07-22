@@ -21,15 +21,22 @@
         tools:layout="@layout/map_fragment" >
         <action
             android:id="@+id/action_mapFragment2_to_level1"
-            app:destination="@id/level1" />
+            app:destination="@id/level1"
+            app:enterAnim="@anim/fragment_open_enter" />
         <action
             android:id="@+id/action_mapFragment2_to_level2Fragment"
-            app:destination="@id/level2Fragment" />
+            app:destination="@id/level2Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/level1"
         android:name="com.example.artificialintelligencegame.game.level1.Level1"
-        android:label="Level1" />
+        android:label="Level1" >
+        <action
+            android:id="@+id/action_level1_to_level2Fragment"
+            app:destination="@id/level2Fragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
     <fragment
         android:id="@+id/level2Fragment"
         android:name="com.example.artificialintelligencegame.game.level2.Level2Fragment"

@@ -55,29 +55,45 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:layout_marginStart="8dp"
-                    android:textSize="18sp"
                     android:layout_marginEnd="8dp"
                     android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
                     android:text="@string/robot_text_1"
                     android:textColor="#01051E"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/action_textView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Далее"
-                    android:textSize="16sp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginBottom="8dp"
-                    android:textColor="#084FA5"
+                    android:gravity="center"
                     android:onClick="@{(view) -> viewModel.showNewRobotText()}"
-                    app:layout_constraintTop_toBottomOf="@id/robot_text"
+                    android:text="Что? Да не собираюсь я тебя убивать? Кто ты вообще такой?"
+                    android:textColor="#084FA5"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="#353535"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/robot_text" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
