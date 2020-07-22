@@ -34,9 +34,9 @@ class Level2Adapter(
         val two = DataBindingUtil.inflate<FragmentStreetBinding>(layoutInflater,R.layout.fragment_street, container, false)
         val three = DataBindingUtil.inflate<FragmentBillboardBinding>(layoutInflater, R.layout.fragment_billboard, container, false)
 
-        one.setVariable(0, viewModel)
-        two.setVariable(0, viewModel)
-        three.setVariable(0, viewModel)
+        one.viewModel = viewModel
+        two.viewModel = viewModel
+        three.viewModel = viewModel
 
         val viewarr = arrayOf(one.root, two.root, three.root)
         container.addView(viewarr[position])
