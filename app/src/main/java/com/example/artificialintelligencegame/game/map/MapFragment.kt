@@ -41,6 +41,7 @@ class MapFragment : Fragment() {
         viewModel.openLevelFragment.observe(viewLifecycleOwner, Observer { level ->
             when (level) {
                 1 -> findNavController().navigate(R.id.action_mapFragment2_to_level1)
+                2 -> findNavController().navigate(R.id.action_mapFragment2_to_level2Fragment)
             }
         })
     }

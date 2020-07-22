@@ -22,9 +22,16 @@
         <action
             android:id="@+id/action_mapFragment2_to_level1"
             app:destination="@id/level1" />
+        <action
+            android:id="@+id/action_mapFragment2_to_level2Fragment"
+            app:destination="@id/level2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/level1"
         android:name="com.example.artificialintelligencegame.game.level1.Level1"
         android:label="Level1" />
+    <fragment
+        android:id="@+id/level2Fragment"
+        android:name="com.example.artificialintelligencegame.game.level2.Level2Fragment"
+        android:label="Level2Fragment" />
 </navigation>
