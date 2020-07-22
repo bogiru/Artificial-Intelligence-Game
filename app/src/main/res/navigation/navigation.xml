@@ -18,5 +18,13 @@
         android:id="@+id/mapFragment2"
         android:name="com.example.artificialintelligencegame.game.map.MapFragment"
         android:label="map_fragment"
-        tools:layout="@layout/map_fragment" />
+        tools:layout="@layout/map_fragment" >
+        <action
+            android:id="@+id/action_mapFragment2_to_level1"
+            app:destination="@id/level1" />
+    </fragment>
+    <fragment
+        android:id="@+id/level1"
+        android:name="com.example.artificialintelligencegame.game.level1.Level1"
+        android:label="Level1" />
 </navigation>
