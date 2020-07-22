@@ -13,7 +13,7 @@ class Level2ViewModel : ViewModel() {
     private val _hideText = MutableLiveData<Unit>()
     val hideText: LiveData<Unit> = _hideText
 
-    private val foundRobots = mutableListOf<Int>()
+    val foundRobots = mutableListOf<Int>()
 
     private val _openNextLevel = MutableLiveData<Unit>()
     val openNextLevel: LiveData<Unit> = _openNextLevel
@@ -31,7 +31,7 @@ class Level2ViewModel : ViewModel() {
     }
 
     private fun addRobotToListFoundRobots(robotId: Int) {
-        if (foundRobots.contains(robotId)) {
+        if (!foundRobots.contains(robotId)) {
             foundRobots.add(robotId)
         }
     }

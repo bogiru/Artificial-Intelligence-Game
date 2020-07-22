@@ -70,11 +70,18 @@ class Level2Fragment : Fragment() {
     }
 
     private fun showText(view: View) {
+        binding.countFoundRobots.text = viewModel.foundRobots.size.toString()
 
         when (view.id) {
             R.id.computer -> binding.robotText.text =  activity?.application?.getText(R.string.computer)
             R.id.column -> binding.robotText.text =  activity?.application?.getText(R.string.column)
             R.id.vacuum_cleaner -> binding.robotText.text =  activity?.application?.getText(R.string.vacuumCleaner)
+            R.id.car -> binding.robotText.text =  activity?.application?.getText(R.string.car)
+            R.id.signaling -> binding.robotText.text =  activity?.application?.getText(R.string.signaling)
+            R.id.camera -> binding.robotText.text =  activity?.application?.getText(R.string.camera)
+            R.id.advertising -> binding.robotText.text =  activity?.application?.getText(R.string.advertising)
+            R.id.first_aid_kit -> binding.robotText.text =  activity?.application?.getText(R.string.first_aid_kit)
+            R.id.traffic_lights -> binding.robotText.text =  activity?.application?.getText(R.string.traffic_lights)
         }
 
         binding.level2CardView.startAnimation(animAppearence)
