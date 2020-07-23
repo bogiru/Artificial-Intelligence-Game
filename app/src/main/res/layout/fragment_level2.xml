@@ -21,7 +21,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:onClick="@{(view) -> viewModel.hideCurrentRobot()}"
+            android:onClick="@{(view) -> viewModel.hideText()}"
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"

@@ -9,6 +9,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.artificialintelligencegame.R
 import com.example.artificialintelligencegame.databinding.FragmentLevel2Binding
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -54,6 +55,10 @@ class Level2Fragment : Fragment() {
          viewModel.hideText.observe(viewLifecycleOwner, Observer {
              hideText()
          })
+
+        viewModel.openNextLevel.observe(viewLifecycleOwner, Observer {
+            findNavController().navigate(R.id.action_level2Fragment_to_level3Fragment)
+        })
 
     }
 

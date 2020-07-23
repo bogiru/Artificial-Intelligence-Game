@@ -42,6 +42,7 @@ class MapFragment : Fragment() {
             when (level) {
                 1 -> findNavController().navigate(R.id.action_mapFragment2_to_level1)
                 2 -> findNavController().navigate(R.id.action_mapFragment2_to_level2Fragment)
+                3 -> findNavController().navigate(R.id.action_mapFragment2_to_level3Fragment)
             }
         })
     }

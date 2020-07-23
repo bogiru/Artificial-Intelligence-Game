@@ -23,7 +23,7 @@ class Level2ViewModel : ViewModel() {
         _currentRobot.value = view
     }
 
-    fun hideCurrentRobot() {
+    fun hideText() {
         if (foundRobots.size == 9) {
             openNextLevel()
         }

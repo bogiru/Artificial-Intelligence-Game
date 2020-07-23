@@ -67,6 +67,7 @@ dependencies {
 
     //ViewPager
     implementation "androidx.viewpager:viewpager:$view_pager_version"
+    implementation "androidx.viewpager2:viewpager2:$view_pager_version"
 
     // Koin for Kotlin
     implementation "org.koin:koin-android-viewmodel:$koin_version"
@@ -80,5 +81,10 @@ dependencies {
 
     // EasyPermissions
     implementation 'pub.devrel:easypermissions:3.0.0'
+
+    //EasyFlipView (card with front and back)
+    dependencies {
+        implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:3.0.0'
+    }
 
 }
