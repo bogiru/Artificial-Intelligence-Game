@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_robot_one_level6">
+        Фух, что-то я проголодался за
+        время твоей тренировки. Может перекусим?
+    </string>
+
+    <string name="text_robot_two_level6">
+        Ахахахах, это прошлый век.
+        Теперь мы питаемся тем же, что и ты, и я даже
+        знаю все продукты, которые только может есть человек
+    </string>
+
+    <string name="text_robot_three_level6">
+        Ну раз не веришь, то давай сыграем в старую детскую игру
+        "съедобное не съедобное". Показывай мне различные объекты в камеру,
+        а я буду говорить: съедобное это, или нет. Твоя задача - сказать:
+        правильно я ответил, или ошибся. Играем до 10 побед. Ну что, согласен?
+    </string>
+
+    <string name="text_robot_four_user_winner_level6">
+        Эх, твоя взяла… Ну ничего, я еще немного попрактикуюсь,
+        и обязательно отыграюсь!
+    </string>
+
+    <string name="text_robot_four_robot_winner_level6">
+        Кто молодец? Я молодец! Я же говорил тебе)
+        Но не расстраивайся, еще отыграешься)
+    </string>
+
+    <string name="text_robot_five_level6">
+        Если честно, мне просто стало немного скучно и я слукавил. Мы все также
+        заряжаемся от электричества, как и раньше.
+        Ну а еду, которую ты мне наприносил, можешь съесть сам)
+    </string>
+    
+    <string name="description_task"> Что-то я проголодался… А давай сыграем в игру </string>
+    <string name="edible">Съедобно</string>
+    <string name="inedible">Не съедобно</string>
+    <string name="robot_score">Счет робота: %0$d </string>
+    <string name="user_score">Ваш счет: %0$d </string>
+    <string name="answer_one_level6">Я не против, а что вы едите? Электричество там, или свет?</string>
+    <string name="answer_two_level6">Да ну, а ты случаем не лукавишь?</string>
+    <string name="answer_three_level6">Естественно</string>
+    <string name="answer_four_level6">Даже не сомневайся!</string>
+    <string name="answer_five_level6">Ах ты! Ну ладно, приятного аппетита.</string>
+</resources>

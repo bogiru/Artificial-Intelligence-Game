@@ -31,6 +31,9 @@
             android:id="@+id/action_mapFragment2_to_level3Fragment"
             app:destination="@id/level3Fragment"
             app:enterAnim="@anim/fragment_open_enter" />
+        <action
+            android:id="@+id/action_mapFragment2_to_level4Fragment"
+            app:destination="@id/level4Fragment" />
     </fragment>
     <fragment
         android:id="@+id/level1"
@@ -54,4 +57,8 @@
         android:id="@+id/level3Fragment"
         android:name="com.example.artificialintelligencegame.game.level3.Level3Fragment"
         android:label="Level3Fragment" />
+    <fragment
+        android:id="@+id/level4Fragment"
+        android:name="com.example.artificialintelligencegame.game.level6.Level4Fragment"
+        android:label="Level4Fragment" />
 </navigation>
